@@ -1,0 +1,3 @@
+[submodule "skills/qt-compiler-errors"]
+	path = skills/qt-compiler-errors
+	url = https://gitea-mm-kzl.iepose.cn/mm-kzl/qt-compiler-errors.git
