@@ -16,10 +16,7 @@
     "automation",
     "git-submodule"
   ],
-  "author": {
-    "name": "mm-kzl",
-    "email": "mm-kzl@outlook.com"
-  },
+  "author": "mm-kzl <mm-kzl@outlook.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -35,5 +32,12 @@
     "createdAt": "2025-12-18",
     "lastUpdated": "2025-12-21",
     "initialVersion": "0.0.1"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mm-kzl/MyClaudeSkills/issues"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.57.0"
   }
 }
