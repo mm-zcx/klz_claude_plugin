@@ -1,6 +1,6 @@
 {
   "name": "my-claude-skills",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "个人Claude技能库，以git子模块形式维护",
   "main": "index.js",
   "scripts": {
@@ -33,7 +33,7 @@
     "projectType": "claude-skills-module",
     "maintainer": "mm-kzl",
     "createdAt": "2025-12-18",
-    "lastUpdated": "2025-12-18",
+    "lastUpdated": "2025-12-21",
     "initialVersion": "0.0.1"
   }
 }
