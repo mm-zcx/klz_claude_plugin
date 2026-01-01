@@ -1,6 +1,6 @@
 [submodule "skills/qt-compiler-errors"]
 	path = skills/qt-compiler-errors
-	url = https://gitea-mm-kzl.iepose.cn/mm-kzl/qt-compiler-errors.git
+	url = http://192.168.2.51:3000/mm-kzl/qt-compiler-errors.git
 [submodule "skills/qt-ui-optimization"]
 	path = skills/qt-ui-optimization
-	url = ./skills/qt-ui-optimization
+	url = http://192.168.2.51:3000/mm-kzl/qt-ui-optimization.git
