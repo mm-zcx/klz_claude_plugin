@@ -1,5 +1,8 @@
 {
   "enabledPlugins": {
-    "document-skills@anthropic-agent-skills": true
+    "document-skills@anthropic-agent-skills": true,
+    "clangd-lsp@claude-plugins-official": true,
+    "context7@claude-plugins-official": true,
+    "glm-plan-usage@zai-coding-plugins": true
   }
 }

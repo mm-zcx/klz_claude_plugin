@@ -6,7 +6,22 @@
       "Bash(mkdir:*)",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(python3:*)"
+      "Bash(python3:*)",
+      "Bash(pip3 install:*)",
+      "Bash(zip:*)",
+      "Bash(tree:*)",
+      "Skill(glm-plan-usage:usage-query-skill)",
+      "Skill(glm-plan-usage:usage-query-skill:*)",
+      "Skill(glm-plan-usage:usage-query)",
+      "Skill(glm-plan-usage:usage-query:*)",
+      "Bash(git submodule status:*)",
+      "Bash(cat:*)",
+      "Bash(tea:*)",
+      "Bash(tea --help:*)",
+      "Bash(curl:*)",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)",
+      "Bash(git submodule add:*)"
     ]
   }
 }
