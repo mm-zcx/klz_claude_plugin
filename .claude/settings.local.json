@@ -21,7 +21,10 @@
       "Bash(curl:*)",
       "Bash(git remote add:*)",
       "Bash(git push:*)",
-      "Bash(git submodule add:*)"
+      "Bash(git submodule add:*)",
+      "Bash(du:*)",
+      "Bash(./verify-marketplace.sh:*)",
+      "Bash(chmod:*)"
     ]
   }
 }
