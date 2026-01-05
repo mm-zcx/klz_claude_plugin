@@ -1,0 +1,20 @@
+{
+  "name": "gitea",
+  "description": "Gitea集成技能，提供代码仓库管理、问题跟踪、Pull Request等功能",
+  "version": "1.0.0",
+  "author": {
+    "name": "mm-kzl",
+    "email": "mm-kzl@outlook.com"
+  },
+  "capabilities": {
+    "skills": [
+      {
+        "name": "gitea",
+        "description": "Gitea集成和管理技能，支持Issue管理、Pull Request、仓库管理、发布管理、通知等功能"
+      }
+    ]
+  },
+  "claude": {
+    "minVersion": "1.0.0"
+  }
+}

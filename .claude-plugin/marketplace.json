@@ -1,6 +1,6 @@
 {
   "name": "myclaudeskills-marketplace",
-  "description": "个人Claude技能市场",
+  "description": "个人Claude技能市场，提供Qt开发和Gitea相关的独立插件",
   "version": "1.0.0",
   "owner": {
     "name": "mm-kzl",
@@ -8,9 +8,24 @@
   },
   "plugins": [
     {
-      "name": "myclaudeskills",
-      "source": "./",
-      "description": "个人Claude技能集合插件，包含Qt开发、C++代码审查、UI优化和Gitea集成等技能"
+      "name": "qt-compiler-errors",
+      "source": "./plugins/qt-compiler-errors",
+      "description": "Qt编译错误诊断和处理技能"
+    },
+    {
+      "name": "qt-cpp-review",
+      "source": "./plugins/qt-cpp-review",
+      "description": "Qt C++代码审查技能"
+    },
+    {
+      "name": "qt-ui-optimization",
+      "source": "./plugins/qt-ui-optimization",
+      "description": "Qt UI优化技能"
+    },
+    {
+      "name": "gitea",
+      "source": "./plugins/gitea",
+      "description": "Gitea集成和管理技能"
     }
   ]
 }
