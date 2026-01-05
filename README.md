@@ -1,56 +1,99 @@
-# MyClaudeSkills
+# MyClaudeSkills Plugin
 
-这是一个用于存放和维护个人Claude Skills库的项目。
+这是一个用于 Claude Code 的个人技能集合插件，以插件仓库形式维护。
 
 ## 项目简介
 
-本项目作为git子模块的形式维护，专门用于管理和维护Claude技能相关的内容，包括：
+本项目是一个标准的 Claude Code 插件，包含多个实用的技能：
 
-- 自定义Claude技能的开发和测试
-- 技能配置文件的维护
-- 技能文档和使用说明
-- 技能优化和改进记录
-- 与Claude Agent SDK集成的各种工具和功能
+- **qt-compiler-errors** - Qt编译错误诊断和处理
+- **qt-cpp-review** - Qt C++代码审查
+- **qt-ui-optimization** - Qt UI优化
+- **gitea** - Gitea集成和管理
 
-## 使用方式
+## 插件安装
 
-本项目以git子模块的形式集成到主项目中，使用以下命令添加到父项目：
+### 方式一：作为本地市场安装
 
 ```bash
-git submodule add <仓库地址> MyClaudeSkills
+# 在 Claude Code 中添加本地市场
+/plugin marketplace add /path/to/MyClaudeSkills
+
+# 安装插件
+/plugin install myclaudeskills@myclaudeskills-marketplace
 ```
 
-## 项目结构
+### 方式二：作为 Git 子模块使用
+
+```bash
+# 添加到父项目
+git submodule add <仓库地址> MyClaudeSkills
+
+# 更新子模块
+git submodule update --remote MyClaudeSkills
+```
+
+## 插件结构
 
 ```
 MyClaudeSkills/
-├── README.md          # 项目说明文档
-├── skills/            # 存放各种技能文件
-├── docs/              # 技能相关文档
-├── config/            # 配置文件
-└── examples/          # 使用示例
+├── .claude-plugin/
+│   ├── plugin.json         # 插件清单文件
+│   └── marketplace.json    # 市场清单文件
+├── skills/                  # 技能目录
+│   ├── qt-compiler-errors/
+│   ├── qt-cpp-review/
+│   ├── qt-ui-optimization/
+│   └── gitea/
+├── README.md               # 项目说明
+├── CHANGELOG.md            # 版本变更日志
+└── version-manager.py      # 版本管理工具
 ```
 
-## 维护说明
+## 包含的技能
 
-- 以git子模块形式独立维护
-- 所有文档均使用中文编写
-- 代码注释使用中文
-- 定期更新和完善技能库内容
-- 保持项目结构清晰有序
+### 1. qt-compiler-errors
+Qt编译错误诊断和处理技能，涵盖常见的CMake/qmake构建问题、MOC编译器问题、链接错误等。
 
-## 更新子模块
+### 2. qt-cpp-review
+Qt C++代码审查技能，用于审查和分析Qt C++代码的质量、规范性和性能。
 
-在父项目中更新子模块：
+### 3. qt-ui-optimization
+Qt UI优化技能，提供UI性能优化和用户体验改进建议。
+
+### 4. gitea
+Gitea集成技能，提供代码仓库管理、问题跟踪、Pull Request等功能。
+
+## 版本管理
+
+本项目遵循定制化的语义化版本控制规则：
+
+- **主版本号**：重大架构变更或不兼容更新
+- **次版本号**：新增技能时 +1
+- **修订号**：技能内容更新时 +1
+
+使用版本管理工具：
 ```bash
-git submodule update --remote MyClaudeSkills
+python version-manager.py status          # 查看当前版本
+python version-manager.py add <技能名>    # 新增技能
+python version-manager.py update <技能名> # 更新技能
 ```
 
 ## 开发信息
 
-- 维护者：mm-kzl
-- 邮箱：mm-kzl@outlook.com
-- 创建时间：2025-12-18
+- **维护者**：mm-kzl
+- **邮箱**：mm-kzl@outlook.com
+- **插件版本**：1.0.0
+- **Claude Code 要求**：≥ 1.0.0
+- **创建时间**：2025-12-18
+
+## 维护规则
+
+- 以插件形式独立维护
+- 所有文档使用中文编写
+- 代码注释使用中文
+- 定期更新和完善技能库内容
+- 保持项目结构清晰有序
 
 ---
 

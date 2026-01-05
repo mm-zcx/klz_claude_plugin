@@ -1,1 +1,18 @@
+# Claude Code 本地设置
 .claude/settings.local.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# 插件打包文件
+*.skill
+
+# 临时文件
+*.tmp
+*.bak
+*~
+.DS_Store

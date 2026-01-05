@@ -1,0 +1,32 @@
+{
+  "name": "myclaudeskills",
+  "description": "个人Claude技能集合插件，包含Qt开发、C++代码审查、UI优化和Gitea集成等技能",
+  "version": "1.0.0",
+  "author": {
+    "name": "mm-kzl",
+    "email": "mm-kzl@outlook.com"
+  },
+  "capabilities": {
+    "skills": [
+      {
+        "name": "qt-compiler-errors",
+        "description": "Qt编译错误诊断和处理技能"
+      },
+      {
+        "name": "qt-cpp-review",
+        "description": "Qt C++代码审查技能"
+      },
+      {
+        "name": "qt-ui-optimization",
+        "description": "Qt UI优化技能"
+      },
+      {
+        "name": "gitea",
+        "description": "Gitea集成和管理技能"
+      }
+    ]
+  },
+  "claude": {
+    "minVersion": "1.0.0"
+  }
+}

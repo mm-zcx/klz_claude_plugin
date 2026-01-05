@@ -1,0 +1,16 @@
+{
+  "name": "myclaudeskills-marketplace",
+  "description": "个人Claude技能市场",
+  "version": "1.0.0",
+  "owner": {
+    "name": "mm-kzl",
+    "email": "mm-kzl@outlook.com"
+  },
+  "plugins": [
+    {
+      "name": "myclaudeskills",
+      "source": "./",
+      "description": "个人Claude技能集合插件，包含Qt开发、C++代码审查、UI优化和Gitea集成等技能"
+    }
+  ]
+}
