@@ -1,4 +1,4 @@
-# MyClaudeSkills Marketplace
+# Claude Code Plugin Marketplace
 
 个人 Claude Code 插件市场，提供 Qt 开发和 Gitea 相关的独立插件。
 
@@ -13,7 +13,7 @@
 
 ```bash
 # 添加市场
-/plugin marketplace add http://192.168.2.51:3000/mm-kzl/MyClaudeSkills.git
+/plugin marketplace add https://github.com/mm-zcx/klz_claude_plugin.git
 
 # 安装插件
 /plugin install qt-compiler-errors@myclaudeskills-marketplace
@@ -25,7 +25,7 @@
 ## 项目结构
 
 ```
-MyClaudeSkills/
+klz_claude_plugin/
 ├── .claude-plugin/
 │   └── marketplace.json       # 市场配置
 ├── plugins/                    # 独立插件
@@ -43,6 +43,10 @@ MyClaudeSkills/
 ./verify-marketplace.sh
 ```
 
+## 仓库地址
+
+- **GitHub**: https://github.com/mm-zcx/klz_claude_plugin
+
 ---
 
-**维护者**: mm-kzl (mm-kzl@outlook.com)
+**维护者**: mm-zcx
