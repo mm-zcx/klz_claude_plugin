@@ -1,5 +1,4 @@
 {
-  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "myclaudeskills-marketplace",
   "description": "个人Claude技能市场，提供Qt开发和Gitea相关的独立插件",
   "version": "1.0.0",
