@@ -1,0 +1,90 @@
+# Qt项目模板 (.pro文件)
+# 适用于qmake构建系统
+
+# 项目配置
+QT += core network serialport widgets  # 添加所需的Qt模块
+CONFIG += c++17 console             # 使用C++17
+CONFIG -= app_bundle                  # 控制台应用程序
+
+# 编译器警告和弃用设置
+DEFINES += QT_DEPRECATED_WARNINGS
+DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x050F00
+
+# 目标可执行文件
+TARGET = my_qt_app
+
+# Debug和Release配置
+CONFIG(debug, debug|release) {
+    TARGET = my_qt_app_debug
+    DEFINES += DEBUG_MODE
+    CONFIG += debug
+} else {
+    TARGET = my_qt_app
+    CONFIG += release
+}
+
+# 源文件
+SOURCES += \
+    main.cpp \
+    myclass.cpp \
+    networkmanager.cpp
+
+# 头文件
+HEADERS += \
+    myclass.h \
+    networkmanager.h
+
+# 包含路径
+INCLUDEPATH += \
+    src \
+    include
+
+# 链接库
+LIBS += -lpthread  # 标准库
+
+# 平台特定设置
+unix {
+    # Unix/Linux特定设置
+    INCLUDEPATH += /usr/local/include
+    LIBS += -L/usr/local/lib
+}
+
+win32 {
+    # Windows特定设置
+    INCLUDEPATH += C:\Qt\5.15.0\msvc2019_64\include
+    LIBS += -LC:\Qt\5.15.0\msvc2019_64\lib
+}
+
+# 自定义编译器标志
+QMAKE_CXXFLAGS += -Wall -Wextra
+
+# 安装规则
+target.path = $$PWD
+INSTALLS += target
+
+# 额外的Makefile目标
+QMAKE_EXTRA_TARGETS += clean-all docs
+clean_all.commands = $(MAKE) clean && rm -f *.o
+docs.commands = @echo "Generate documentation here..."
+
+# 部署规则（可选）
+unix {
+    # Unix/Linux部署脚本
+    deploy.target = deploy
+    deploy.commands = @echo "Deploying application..."
+    QMAKE_EXTRA_TARGETS += deploy
+}
+
+# 测试配置（可选）
+contains(QT_CONFIG, testlib) {
+    SOURCES += test_myclass.cpp
+    HEADERS += test_myclass.h
+    QT += testlib
+}
+
+# 包含第三方库（示例）
+# LIBS += -lthirdparty_lib
+# INCLUDEPATH += /path/to/thirdparty/include
+
+# 条件编译（示例）
+# DEFINES += FEATURE_FLAG  # 启用特定功能

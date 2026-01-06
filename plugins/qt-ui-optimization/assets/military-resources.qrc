@@ -1,0 +1,67 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/assets">
+        <!-- 军工主题样式表 -->
+        <file>themes/military-camouflage.qss</file>
+
+        <!-- 图标资源 - 军工风格 -->
+        <file>icons/military/radar.png</file>
+        <file>icons/military/target.png</file>
+        <file>icons/military/tactical.png</file>
+        <file>icons/military/shield.png</file>
+        <file>icons/military/warning.png</file>
+        <file>icons/military/scan.png</file>
+        <file>icons/military/comm.png</file>
+        <file>icons/military/power.png</file>
+
+        <!-- HUD风格图标 -->
+        <file>icons/hud/hud-arrow.png</file>
+        <file>icons/hud/hud-circle.png</file>
+        <file>icons/hud/hud-crosshair.png</file>
+        <file>icons/hud/hud-grid.png</file>
+        <file>icons/hud/hud-line.png</file>
+
+        <!-- 复选框和单选框图标 -->
+        <file>icons/modern/check-tactical.png</file>
+        <file>icons/modern/radio-tactical.png</file>
+        <file>icons/modern/arrow-down-tactical.png</file>
+
+        <!-- 状态指示器 -->
+        <file>icons/status/online.png</file>
+        <file>icons/status/offline.png</file>
+        <file>icons/status/warning.png</file>
+        <file>icons/status/error.png</file>
+        <file>icons/status/scanning.png</file>
+
+        <!-- 声音资源 -->
+        <file>sounds/radar-beep.wav</file>
+        <file>sounds/tactical-alert.wav</file>
+        <file>sounds/system-start.wav</file>
+        <file>sounds/emergency-stop.wav</file>
+
+        <!-- 字体资源 -->
+        <file>fonts/Consolas.ttf</file>
+        <file>fonts/Monaco.ttf</file>
+        <file>fonts/Roboto-Mono.ttf</file>
+    </qresource>
+
+    <!-- 特殊资源前缀 -->
+    <qresource prefix="/military">
+        <!-- 迷彩纹理 -->
+        <file>textures/camouflage-green.png</file>
+        <file>textures/camouflage-desert.png</file>
+        <file>textures/camouflage-urban.png</file>
+        <file>textures/metal-grid.png</file>
+
+        <!-- HUD元素 -->
+        <file>hud/radar-display.svg</file>
+        <file>hud/scan-line.svg</file>
+        <file>hud/target-lock.svg</file>
+        <file>hud/compass.svg</file>
+
+        <!-- 动画资源 -->
+        <file>animations/radar-sweep.gif</file>
+        <file>animations/pulse-green.gif</file>
+        <file>animations/scan-progress.gif</file>
+    </qresource>
+</RCC>

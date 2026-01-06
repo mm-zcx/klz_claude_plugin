@@ -1,0 +1,9 @@
+{
+  "name": "qt-compiler-errors",
+  "description": "Qt编译错误诊断和处理技能，涵盖CMake/qmake构建问题、MOC编译器问题、链接错误等",
+  "version": "1.0.0",
+  "author": {
+    "name": "mm-kzl",
+    "email": "mm-kzl@outlook.com"
+  }
+}

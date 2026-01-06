@@ -1,0 +1,9 @@
+{
+  "name": "qt-cpp-review",
+  "description": "Qt C++代码审查技能，用于审查和分析Qt C++代码的质量、规范性和性能",
+  "version": "0.4.0",
+  "author": {
+    "name": "mm-kzl",
+    "email": "mm-kzl@outlook.com"
+  }
+}
